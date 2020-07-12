@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ung dung chuyen doi tien te</title>
+</head>
+<body>
+<input type="text" id="amount">
+<select id="select1">
+    <option value="1">USD</option>
+    <option value="0.85">EURO</option>
+    <option value="25000">VND</option>
+</select>
+<select id="select2">
+    <option value="1">USD</option>
+    <option value="0.85">EURO</option>
+    <option value="25000">VND</option>
+</select>
+<button id="convert" onclick="convert()">Convert</button>
+<p id="result"></p>
+</body>
+<script>
+    function convert() {
+        let amount = document.getElementById('amount').value;
+        let select1 = document.getElementById('select1').value;
+        let select2 = document.getElementById('select2').value;
+        result = amount * select2 / select1
+        document.getElementById('result').innerHTML = result
+    }
+</script>
+</html>

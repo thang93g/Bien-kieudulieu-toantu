@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ung dung may tinh</title>
+</head>
+<body>
+<input id="n1">
+<input id="n2"></br><p></p>
+<button id="add" onclick="addition()">Addition(+)</button>
+<button id="sub" onclick="subtraction()">Subtraction(-)</button>
+<button id="mul" onclick="multiplication()">Multiplication(X)</button>
+<button id="div" onclick="division()">Division(/)</button>
+<p id="ketqua"></p>
+</body>
+</html>
+<script>
+    var n1 = +document.getElementById('n1').value;
+    var n2 = +document.getElementById('n2').value;
+    function addition() {
+        var n1 = +document.getElementById('n1').value;
+        var n2 = +document.getElementById('n2').value;
+        ketqua = n1 + n2
+        document.getElementById('ketqua').innerHTML = ketqua;
+    }
+    function subtraction() {
+        var n1 = +document.getElementById('n1').value;
+        var n2 = +document.getElementById('n2').value;
+        ketqua = n1 - n2
+        document.getElementById('ketqua').innerHTML = ketqua;
+    }
+    function multiplication() {
+        var n1 = +document.getElementById('n1').value;
+        var n2 = +document.getElementById('n2').value;
+        ketqua = n1 * n2
+        document.getElementById('ketqua').innerHTML = ketqua;
+    }
+    function division() {
+        var n1 = +document.getElementById('n1').value;
+        var n2 = +document.getElementById('n2').value;
+        ketqua = n1 / n2
+        document.getElementById('ketqua').innerHTML = ketqua;
+    }
+</script>
